@@ -21,9 +21,9 @@ while user_money > 0:
     elif user_choice and user_bet:
         isrunning = True
         new_y_position = -160
-        for create_turtle in range(0, 6):
+        for i in range(0, 6):
             new_turtle = Turtle(shape="turtle")
-            new_turtle.color(colors[create_turtle])
+            new_turtle.color(colors[i])
             new_turtle.penup()
             new_turtle.goto(x=-230, y=new_y_position)
             new_y_position += 60
