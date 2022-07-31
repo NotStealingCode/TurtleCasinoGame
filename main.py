@@ -13,8 +13,8 @@ while user_money > 0:
                                                                  "Red/Blue/Green/Yellow/Orange/Purple): ").lower()
     user_bet = screen.numinput(title="Amount", prompt=f"Enter an amount to bet: (You currently have ${user_money})")
 
-    if user_bet > user_money:
-        print("Insufficient funds. Restart the game.")
+    if user_bet > user_money or user_bet < 0:
+        print("Insufficient input. Restart the game.")
         continue
     isrunning = True
     new_y_position = -160
