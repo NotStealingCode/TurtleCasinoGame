@@ -3,8 +3,6 @@ import random
 
 user_money = 1000
 isrunning = False
-continue_playing = True
-
 screen = Screen()
 screen.setup(width=500, height=400)
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
