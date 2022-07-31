@@ -36,11 +36,10 @@ while user_money > 0:
                     if winning_turtle == user_choice.lower():
                         print(f"You have won! The {winning_turtle} turtle is the winner.")
                         user_money += 2 * user_bet
-                        screen.clear()
                     else:
                         print(f"You have lost! The {winning_turtle} turtle is the winner.")
                         user_money -= user_bet
-                        screen.clearscreen()
+                    screen.clearscreen()
                 random_distance = random.randint(0, 10)
                 turtle.forward(random_distance)
 screen.exitonclick()
